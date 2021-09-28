@@ -99,6 +99,7 @@ export default {
                   columns.map((column, cellIndex) => (<th
                     colspan={ column.colSpan }
                     rowspan={ column.rowSpan }
+                    flied={ column.property }
                     on-mousemove={ ($event) => this.handleMouseMove($event, column) }
                     on-mouseout={ this.handleMouseOut }
                     on-mousedown={ ($event) => this.handleMouseDown($event, column) }
